@@ -1,0 +1,212 @@
+name: jewellery_luxury
+display_name: Jewellery Luxury
+version: 1.1.8
+theme_key: b0ba76f328a5f8ac5d353b32d9ddd68f
+author:
+  name: "Daniel Domzalski"
+  email: "masztal18@wp.pl"
+  url: "http://grafike.pl"
+
+meta:
+  compatibility:
+      from: 1.7.0.0
+      to: ~
+
+  available_layouts:
+    layout-full-width:
+      name: Full Width
+      description: No side columns, ideal for distraction-free pages such as product pages.
+    layout-both-columns:
+      name: Three Columns
+      description: One large central column and 2 side columns.
+    layout-left-column:
+      name: Two Columns, small left column
+      description: Two columns with a small left column
+    layout-right-column:
+      name: Two Columns, small right column
+      description: Two columns with a small right column
+
+assets:
+  # If you're using this theme as child and you want to load
+  # the parent theme assets, uncomment this line.
+#  use_parent_assets: true
+
+  # The following lines are showing how to load assets in your page
+  # Uncomment and change value to start loading css or js files
+   #css:
+     #all:
+       #- id: fontawesome-lib-style
+         #path: assets/css/font-awesome.css
+#    product:
+#      - id: product-style
+#        path: assets/css/product.css
+#        media: all
+#        priority: 200
+   js:
+     all:
+       - id: owl-carousel-lib
+         path: assets/js/owl.carousel.js
+         priority: 310
+         position: bottom
+       - id: totalstorage-lib
+         path: assets/js/totalstorage.js
+         priority: 320
+         position: bottom
+       - id: jquery-1.11.0.min.js
+         path: assets/js/jquery-1.11.0.min.js
+         priority: 0
+         position: head
+#    cart:
+#      - id: cat-extra-lib
+#        path: assets/js/cart-lib.js
+
+
+global_settings:
+  configuration:
+    PS_IMAGE_QUALITY: png
+    CROSSSELLING_NBR: 10
+    HOME_FEATURED_NBR: 10
+    PS_PRODUCTS_PER_PAGE: 8
+    BLOCKSOCIAL_FACEBOOK: "#"
+    BLOCKSOCIAL_TWITTER: "#"
+    BLOCKSOCIAL_RSS: "#"
+    BLOCKSOCIAL_YOUTUBE: "#"
+    BLOCKSOCIAL_INSTAGRAM: "#"
+    HOMESLIDER_PAUSE_ON_HOVER: 0
+  modules:
+   to_enable:
+     - ps_linklist
+     - elevatezoom
+     - ddproductcomments
+     - dd_productimagehover
+     - bannerfour
+     - bannerfive
+     - bannersix
+     - fancybox
+   to_disable:
+     - ps_categoryproducts  
+  hooks:
+    modules_to_hook:
+      displayNav1:
+        - ps_contactinfo
+      displayNav2:
+        - ps_searchbar
+        - ps_languageselector
+        - ps_currencyselector
+        - ps_customersignin
+        - ps_shoppingcart
+      displayTop:
+        - ps_mainmenu
+      displayHome:
+        - ps_imageslider
+        - bannerone
+        - bannertwo
+        - bannerthree
+        - bannerfour
+        - bannerfive
+        - bannersix
+        - ps_newproducts
+        - slider_featuredproducts
+        - slider_bestsellers
+        - manufacturerslider
+      displayFooterBefore:
+        - ps_customtext
+        - ps_socialfollow
+      displayFooterProduct:
+        - ps_crossselling
+      displayFooter:
+        - ps_linklist
+        - ps_customeraccountlinks
+        - ps_contactinfo
+        - ps_emailsubscription
+      displayLeftColumn:
+        - ps_categorytree
+        - ps_facetedsearch
+      displaySearch:
+        - ps_searchbarfound
+      displayProductButtons:
+        - ps_sharebuttons
+      displayReassurance:
+        - blockreassurance
+      displayOrderConfirmation2:
+        - ps_featuredproducts
+      displayCrossSellingShoppingCart:
+        - ps_featuredproducts
+
+  image_types:
+    cart_default:
+      width: 125
+      height: 125
+      scope: [products]
+    small_default:
+      width: 98
+      height: 98
+      scope: [products, categories, manufacturers, suppliers]
+    medium_default:
+      width: 452
+      height: 452
+      scope: [products, manufacturers, suppliers]
+    home_default:
+      width: 380
+      height: 380
+      scope: [products]
+    large_default:
+      width: 900
+      height: 900
+      scope: [products, manufacturers, suppliers]
+    category_default:
+      width: 1580
+      height: 366
+      scope: [categories]
+    stores_default:
+      width: 170
+      height: 115
+      scope: [stores]
+
+theme_settings:
+  default_layout: layout-full-width
+  layouts:
+    category: layout-left-column
+    best-sales: layout-left-column
+    new-products: layout-left-column
+    prices-drop: layout-left-column
+    contact: layout-left-column
+    manufacturer: layout-left-column
+    password: layout-left-column
+    sitemap: layout-full-width
+    supplier: layout-left-column
+    address: layout-full-width
+    addresses: layout-full-width
+    authentication: layout-full-width
+    discount: layout-full-width
+    history: layout-full-width
+    identity: layout-full-width
+    my-account: layout-full-width
+    order-follow: layout-left-column
+    order-slip: layout-left-column
+    order: layout-left-column
+    search: layout-full-width
+    stores: layout-full-width
+    guest-tracking: layout-left-column
+    cms: layout-full-width
+
+dependencies:
+  modules:
+        - bannerone
+        - bannertwo
+        - bannerthree
+        - bannerfour
+        - bannerfive
+        - bannersix
+        - manufacturerslider
+        - ps_newproducts
+        - slider_bestsellers
+        - slider_featuredproducts
+        - ps_categoryproducts
+        - ps_searchbarfound
+        - ddproductcomments
+        - dd_productimagehover
+        - elevatezoom
+        - ps_categoryproducts
+        - ps_crossselling
+        - fancybox

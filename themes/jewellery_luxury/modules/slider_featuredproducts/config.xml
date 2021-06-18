@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>slider_featuredproducts</name>
+    <displayName><![CDATA[Slider Featured Products]]></displayName>
+    <version><![CDATA[1.0.1]]></version>
+    <description><![CDATA[Displays featured products central column of your homepage.]]></description>
+    <author><![CDATA[Daniel Domzalski]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>
